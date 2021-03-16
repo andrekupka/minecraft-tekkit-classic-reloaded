@@ -16,9 +16,9 @@ RUN chmod +x /start.sh
 
 USER minecraft
 
-VOLUME /data
+VOLUME /minecraft
 ADD server.properties /tmp/server.properties
-WORKDIR /data
+WORKDIR /minecraft
 
 EXPOSE 25565
 
