@@ -4,6 +4,9 @@ set -e
 
 cd /minecraft
 
+cp -rf /tmp/Template/* .
+sed -i 's/eula=false/eula=true/g' eula.txt
+
 if [[ ! -e server.properties ]]; then
     cp /tmp/server.properties .
 fi
